@@ -1,3 +1,6 @@
+/* =========================
+   GLOBAL
+========================= */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +14,27 @@ body {
   line-height: 1.6;
 }
 
-/* HERO */
+/* =========================
+   BUTTON
+========================= */
+.btn {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   HERO (INDEX)
+========================= */
 .hero {
   height: 100vh;
   background: #ffffff;
@@ -31,15 +54,9 @@ body {
   color: #555;
 }
 
-.btn {
-  text-decoration: none;
-  background: #000;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-}
-
-/* ABOUT */
+/* =========================
+   ABOUT (INDEX)
+========================= */
 .about {
   padding: 4rem 10%;
   background: #fff;
@@ -62,7 +79,9 @@ body {
   font-size: 0.9rem;
 }
 
-/* PROJECTS */
+/* =========================
+   PROJECTS (INDEX)
+========================= */
 .projects {
   padding: 4rem 10%;
 }
@@ -93,10 +112,119 @@ body {
   color: #000;
 }
 
-/* CONTACT */
+/* =========================
+   CONTACT (INDEX)
+========================= */
 .contact {
   background: #000;
   color: #fff;
   padding: 3rem 10%;
   text-align: center;
+}
+
+/* =========================================================
+   CASE STUDY PAGES (PROJECT PAGES)
+========================================================= */
+
+/* HERO */
+.case-hero {
+  padding: 6rem 10% 4rem;
+  background: #ffffff;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.case-hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.case-hero p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* CONTENT */
+.case-content {
+  padding: 4rem 10%;
+  background: #f9f9f9;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.case-content h2 {
+  font-size: 1.6rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.case-content p {
+  max-width: 800px;
+  color: #444;
+}
+
+.case-content ul,
+.case-content ol {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.case-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* =========================
+   IMAGE GRID (WIREFRAME / UI)
+========================= */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.image-grid img {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 0.6rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================
+   FIGMA BUTTON (OPTIONAL)
+========================= */
+.figma-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  background: #eee;
+  color: #000;
+  padding: 0.7rem 1.6rem;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.figma-btn:hover {
+  background: #ddd;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .case-hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .about,
+  .projects,
+  .case-content {
+    padding: 3rem 6%;
+  }
 }
