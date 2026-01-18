@@ -1,64 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <title>Rental Comic Book System | UX Case Study</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Rental Comic Book System | UX/UI Case Study</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
-<section class="case-hero">
-  <h1>Rental Comic Book System</h1>
-  <p>UX/UI Case Study · Web Application</p>
-</section>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Rental Comic Book System</h1>
+    <p>UX/UI Case Study · Web Application</p>
+    <p>บทบาท: UX/UI Designer · เครื่องมือ: Figma</p>
+  </section>
 
-<section class="case-content">
+  <!-- OVERVIEW -->
+  <section class="about">
+    <h2>ภาพรวมโปรเจค</h2>
+    <p>
+      ระบบเช่าหนังสือการ์ตูน (Rental Comic Book System) เป็นเว็บแอปพลิเคชัน
+      ที่ออกแบบมาเพื่อช่วยให้ผู้ใช้สามารถค้นหา ดูรายละเอียด และเช่าการ์ตูน
+      ได้อย่างสะดวกและเข้าใจง่าย
+    </p>
+  </section>
 
-  <h2>Project Overview</h2>
-  <p>
-    This project focuses on designing a rental comic book system
-    that allows users to browse, rent, and manage comic books easily.
-  </p>
+  <!-- PROBLEM -->
+  <section class="projects">
+    <h2>ปัญหาที่พบ</h2>
+    <ul>
+      <li>ผู้ใช้ไม่ทราบว่าการ์ตูนเล่มใดว่างให้เช่า</li>
+      <li>ขั้นตอนการเช่าซับซ้อนสำหรับผู้ใช้ใหม่</li>
+      <li>สถานะการยืมคืนไม่ชัดเจน</li>
+    </ul>
+  </section>
 
-  <h2>Problem</h2>
-  <ul>
-    <li>Comic rental systems are often confusing</li>
-    <li>Users struggle to find available comics</li>
-    <li>Rental status is unclear</li>
-  </ul>
+  <!-- GOAL -->
+  <section class="about">
+    <h2>เป้าหมายในการออกแบบ</h2>
+    <ul>
+      <li>ทำให้ขั้นตอนการเช่าการ์ตูนเข้าใจง่าย</li>
+      <li>แสดงสถานะการเช่าอย่างชัดเจน</li>
+      <li>เพิ่มประสบการณ์การใช้งานที่ดีให้กับผู้ใช้</li>
+    </ul>
+  </section>
 
-  <h2>Solution</h2>
-  <p>
-    Design a clear system with simple navigation,
-    visible rental status, and an easy rental process.
-  </p>
+  <!-- USER PERSONA -->
+  <section class="projects">
+    <h2>User Persona</h2>
+    <p><strong>ชื่อ:</strong> เคน (อายุ 21 ปี)</p>
+    <p><strong>เป้าหมาย:</strong> เช่าการ์ตูนได้อย่างรวดเร็ว</p>
+    <p><strong>ปัญหา:</strong> ระบบใช้งานยากและไม่ชัดเจน</p>
+  </section>
 
-  <h2>User Persona</h2>
-  <p>
-    <strong>Name:</strong> Ken (21)<br>
-    <strong>Goal:</strong> Rent comics quickly without confusion<br>
-    <strong>Pain Point:</strong> Doesn’t know which comics are available
-  </p>
+  <!-- USER FLOW -->
+  <section class="about">
+    <h2>User Flow</h2>
+    <p>เลือกการ์ตูน → ดูรายละเอียด → กดเช่า → ยืนยันการเช่า</p>
+  </section>
 
-  <h2>User Flow</h2>
-  <ol>
-    <li>Browse comic list</li>
-    <li>View comic details</li>
-    <li>Check availability</li>
-    <li>Confirm rental</li>
-    <li>View rental history</li>
-  </ol>
+  <!-- WIREFRAME -->
+  <section class="projects">
+    <h2>Wireframe</h2>
+    <p>
+      ออกแบบ Wireframe แบบ Low-fidelity เพื่อโฟกัสที่โครงสร้างหน้า
+      และลำดับการใช้งานของผู้ใช้
+    </p>
+    <img src="images/rental-wireframe.png" alt="Wireframe ระบบเช่าการ์ตูน" width="100%" />
+  </section>
 
-  <h2>UX Decisions</h2>
-  <ul>
-    <li>Use clear status labels (Available / Rented)</li>
-    <li>Limit steps in rental flow</li>
-    <li>Use simple card-based layout</li>
-  </ul>
+  <!-- UI MOCKUP -->
+  <section class="about">
+    <h2>UI Mockup</h2>
+    <p>
+      การออกแบบ UI เน้นความอ่านง่าย ใช้รูปแบบการ์ด
+      และแสดงสถานะการเช่าอย่างชัดเจน
+    </p>
+    <img src="images/rental-ui.png" alt="UI Mockup ระบบเช่าการ์ตูน" width="100%" />
+  </section>
 
-  <a href="index.html" class="btn">← Back to Home</a>
-</section>
+  <!-- DESIGN DECISION -->
+  <section class="projects">
+    <h2>เหตุผลในการออกแบบ</h2>
+    <ul>
+      <li>ใช้ Card Layout เพื่อให้ผู้ใช้สแกนข้อมูลได้ง่าย</li>
+      <li>ใช้ป้ายสถานะเพื่อบอกความพร้อมในการเช่า</li>
+    </ul>
+  </section>
+
+  <!-- FIGMA PROTOTYPE -->
+    <section class="projects">
+    <h2>Figma Prototype</h2>
+    <p>
+        สามารถดู Prototype และ Flow การใช้งานของโปรเจคนี้ได้ผ่าน Figma
+        โดยลิงก์ด้านล่าง
+    </p>
+    <a href="https://www.figma.com/your-prototype-link"
+        class="btn"
+        target="_blank">
+        ดู Prototype บน Figma
+    </a>
+    </section>
+
+
+  <!-- REFLECTION -->
+  <section class="about">
+    <h2>สิ่งที่ได้เรียนรู้</h2>
+    <p>
+      โปรเจคนี้ช่วยให้เข้าใจการออกแบบระบบที่มีหลายขั้นตอน
+      และการให้ความสำคัญกับความชัดเจนของข้อมูล
+    </p>
+  </section>
+
+  <!-- BACK -->
+  <section class="contact">
+    <a href="index.html" class="btn">กลับหน้า Portfolio</a>
+  </section>
 
 </body>
 </html>
